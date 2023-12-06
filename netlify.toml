@@ -1,0 +1,6 @@
+[build]
+  command = "streamlit run app.py"
+  publish = "Breast Cancer Detection"
+
+[dev]
+  command = "streamlit run app.py"
