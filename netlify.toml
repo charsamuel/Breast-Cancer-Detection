@@ -1,6 +1,4 @@
 [build]
-  command = "streamlit run app.py"
-  publish = "Breast Cancer Detection"
+  command = "source venv/bin/activate && pip install -r requirements.txt && streamlit run app.py"
+  publish = "/opt/build/repo/Breast Cancer Detection"
 
-[dev]
-  command = "streamlit run app.py"
