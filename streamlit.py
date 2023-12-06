@@ -1,8 +1,8 @@
 import subprocess
 
-def handler(event, context):
-    subprocess.run(['streamlit', 'run', 'app.py'], check=True, capture_output=True, text=True)
-    return {
-        'statusCode': 200,
-        'body': 'OK'
-    }
+def main():
+    subprocess.run(["pip", "install", "-r", "requirements.txt"])
+    subprocess.run(["streamlit", "run", "app.py"])
+
+if __name__ == "__main__":
+    main()
